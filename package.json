@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rayyyy/graphql-node#readme",
   "dependencies": {
+    "apollo-server": "^3.10.2",
     "graphql": "^16.6.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3"
