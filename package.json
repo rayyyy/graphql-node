@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "dev:a": "ts-node src/post.ts",
-    "dev:b": "ts-node src/user.ts"
+    "dev:b": "ts-node src/user.ts",
+    "dev:gateway": "ts-node src/gateway.ts"
   },
   "repository": {
     "type": "git",

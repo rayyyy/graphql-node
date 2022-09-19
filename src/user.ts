@@ -1,4 +1,4 @@
-import { buildFederatedSchema } from '@apollo/federation'
+import { buildSubgraphSchema } from '@apollo/federation'
 import { ApolloServer, gql } from 'apollo-server'
 
 const typeDefs = gql`
@@ -30,7 +30,7 @@ const resolvers = {
 }
 
 const server = new ApolloServer({
-  schema: buildFederatedSchema([{ typeDefs, resolvers }]),
+  schema: buildSubgraphSchema([{ typeDefs, resolvers }]),
 })
 
 server.listen({ port: 4002 }).then(({ url }) => {
