@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "dev:a": "ts-node src/post.ts",
+    "dev:b": "ts-node src/user.ts"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/rayyyy/graphql-node#readme",
   "dependencies": {
+    "@apollo/federation": "^0.36.1",
+    "@apollo/gateway": "^2.1.1",
     "apollo-server": "^3.10.2",
     "graphql": "^16.6.0",
     "ts-node": "^10.9.1",
