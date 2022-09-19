@@ -3,8 +3,9 @@ import { loadSchemaSync } from '@graphql-tools/load'
 import { addResolversToSchema } from '@graphql-tools/schema'
 import { ApolloServer } from 'apollo-server'
 import { join } from 'path'
+import { Book, Resolvers } from './types/generated/graphql'
 
-const books = [
+const books: Book[] = [
   {
     title: 'The Awakening',
     author: 'Kate Chopin',
@@ -15,7 +16,7 @@ const books = [
   },
 ]
 
-const resolvers = {
+const resolvers: Resolvers = {
   Query: {
     books: () => books,
   },

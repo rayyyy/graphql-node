@@ -8,7 +8,8 @@
     "dev:simple": "ts-node src/simple.ts",
     "dev:post": "ts-node src/post.ts",
     "dev:user": "ts-node src/user.ts",
-    "dev:gateway": "ts-node src/gateway.ts"
+    "dev:gateway": "ts-node src/gateway.ts",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "repository": {
     "type": "git",
