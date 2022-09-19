@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/simple.ts",
-    "dev:a": "ts-node src/post.ts",
-    "dev:b": "ts-node src/user.ts",
+    "dev": "ts-node src/index.ts",
+    "dev:simple": "ts-node src/simple.ts",
+    "dev:post": "ts-node src/post.ts",
+    "dev:user": "ts-node src/user.ts",
     "dev:gateway": "ts-node src/gateway.ts"
   },
   "repository": {
