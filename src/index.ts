@@ -1,21 +1,22 @@
 import { ApolloServer, gql } from 'apollo-server'
 
 const typeDefs = gql`
+  """
+  Book type
+  """
   type Book {
     title: String
     author: String
+    """
+    title and author
+    """
+    custom_field: String
   }
 
   type Query {
     books: [Book]
   }
 `
-
-const resolvers = {
-  Query: {
-    books: () => books,
-  },
-}
 
 const books = [
   {
@@ -27,6 +28,16 @@ const books = [
     author: 'Paul Auster',
   },
 ]
+
+const resolvers = {
+  Query: {
+    books: () => books,
+  },
+  Book: {
+    custom_field: (book: any) => book.title + book.author,
+    title: (book: any) => book.title + 'hoge',
+  },
+}
 
 const server = new ApolloServer({
   typeDefs,
