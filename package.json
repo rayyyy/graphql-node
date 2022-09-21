@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "dev:simple": "ts-node src/simple.ts",
-    "dev:post": "ts-node src/post.ts",
-    "dev:user": "ts-node src/user.ts",
-    "dev:gateway": "ts-node src/gateway.ts",
+    "dev": "ts-node src/server/index.ts",
+    "dev:simple": "ts-node src/server/simple.ts",
+    "dev:post": "ts-node src/server/post.ts",
+    "dev:user": "ts-node src/server/user.ts",
+    "dev:gateway": "ts-node src/server/gateway.ts",
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "repository": {
