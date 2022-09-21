@@ -1,9 +1,24 @@
+"""
+プロジェクト内で扱われる本のtype
+"""
 type Book {
+  """
+  本タイトル
+  """
   title: String!
+  """
+  著者
+  """
   author: String!
+  """
+  本によっていろいろな値は入ります。
+  """
   custom_field: String
 }
 
 type Query {
+  """
+  全部の本を取得するクエリ
+  """
   books: [Book]
 }

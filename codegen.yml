@@ -1,6 +1,6 @@
 overwrite: true
 schema: schema.graphql
-documents: ./src/client/graphql/**/*.tsx
+documents: ./src/client/graphql/**/*.graphql
 generates:
   ./src/types/generated/graphql.ts:
     schema: schema.graphql

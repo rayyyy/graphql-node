@@ -13,15 +13,20 @@ export type Scalars = {
   Float: number;
 };
 
+/** プロジェクト内で扱われる本のtype */
 export type Book = {
   __typename?: 'Book';
+  /** 著者 */
   author: Scalars['String'];
+  /** 本によっていろいろな値は入ります。 */
   custom_field?: Maybe<Scalars['String']>;
+  /** 本タイトル */
   title: Scalars['String'];
 };
 
 export type Query = {
   __typename?: 'Query';
+  /** 全部の本を取得するクエリ */
   books?: Maybe<Array<Maybe<Book>>>;
 };
 
@@ -125,3 +130,8 @@ export type Resolvers<ContextType = any> = ResolversObject<{
   Query?: QueryResolvers<ContextType>;
 }>;
 
+
+export type GetBooksQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetBooksQuery = { __typename?: 'Query', books?: Array<{ __typename?: 'Book', title: string, author: string, custom_field?: string | null } | null> | null };
