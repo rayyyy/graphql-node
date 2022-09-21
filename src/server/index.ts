@@ -3,7 +3,7 @@ import { loadSchemaSync } from '@graphql-tools/load'
 import { addResolversToSchema } from '@graphql-tools/schema'
 import { ApolloServer } from 'apollo-server'
 import { join } from 'path'
-import { Resolvers } from './types/generated/graphql'
+import { Resolvers } from '../types/generated/graphql'
 
 const resolvers: Resolvers = {
   Query: {
