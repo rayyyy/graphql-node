@@ -9,6 +9,7 @@
     "dev:post": "ts-node src/server/post.ts",
     "dev:user": "ts-node src/server/user.ts",
     "dev:gateway": "ts-node src/server/gateway.ts",
+    "client": "ts-node src/client/getBooks.ts",
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "repository": {

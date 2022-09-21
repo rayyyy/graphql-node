@@ -137,7 +137,7 @@ export type Resolvers<ContextType = any> = ResolversObject<{
 export type GetBooksQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetBooksQuery = { __typename?: 'Query', books?: Array<{ __typename?: 'Book', title: string, author: string, custom_field?: string | null } | null> | null };
+export type GetBooksQuery = { __typename?: 'Query', books?: Array<{ __typename?: 'Book', title: string, author: string } | null> | null };
 
 
 export const GetBooksDocument = gql`
@@ -145,7 +145,6 @@ export const GetBooksDocument = gql`
   books {
     title
     author
-    custom_field
   }
 }
     `;

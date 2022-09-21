@@ -2,6 +2,5 @@ query getBooks {
   books {
     title
     author
-    custom_field
   }
 }
